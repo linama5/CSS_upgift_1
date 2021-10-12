@@ -1,0 +1,48 @@
+body {
+  height: 1000px;
+  background-image: linear-gradient(rgb(223, 202, 202), rgb(240, 96, 96));
+}
+
+.box {
+  text-align: center;
+  margin: 5% 30% 0% 30%;
+  font-size: 30px;
+  background-color: rgb(245, 243, 240);
+  padding: 3%;
+  animation: winLoad 1000ms ease-in-out;
+}
+
+@keyframes winLoad {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+p, h1, .form{
+    animation: fadein 2s ease-in;
+}
+
+li {
+  list-style: none;
+  animation: fadein 1s ease-in;
+}
+
+@keyframes fadein{
+
+from{ opacity:0;}
+to { opacity:1;}
+}
+.taskInput {
+  font-size: 2rem;
+}
+
+.addButton {
+  font-size: 2rem;
+}
